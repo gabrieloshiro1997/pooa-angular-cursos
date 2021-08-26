@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="nomeInput">Nome</label>
+      <input type="text" class="form-control" id="nomeInput" #nomeInput />
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="cargaHorariaInput">Carga Horária</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cargaHorariaInput"
+        #cargaHorariaInput
+      />
+    </div>
+  </div>
+</div>
+<div class="mt-2 col-12">
+  <button
+    (click)="adicionar(nomeInput.value, cargaHorariaInput.value)"
+    class="w-100 btn btn-success"
+    type="button"
+  >
+    Cadastrar
+  </button>
+</div>

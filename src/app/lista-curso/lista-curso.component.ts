@@ -17,4 +17,8 @@ export class ListaCursoComponent {
     },
     { nome: 'Next.js e React - Curso Completo 2021', cargaHoraria: 50 },
   ];
+
+  onAdicionarCurso(curso) {
+    this.cursos = [curso, ...this.cursos];
+  }
 }
